@@ -34,3 +34,16 @@ initofb = init b                        -- [[1,2,3,4],[5,3,3,3],[1,2,2,3,4]]
 lengthofb = length b                    -- 4
 isNullList = null []                    -- True
 isNullb = null b                        -- False
+
+f = [5, 4, 3, 2, 1]
+g = reverse f                           -- [1,2,3,4,5]
+
+
+-- ranges
+twenty = [1..20]                        -- [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+alphabet = ['a'..'z']                   -- "abcdefghijklmnopqrstuvwxyz"
+eventilltwenty = [2,4..20]              -- [2,4,6,8,10,12,14,16,18,20]
+
+-- take and cycle (and repeat)
+onetwothree = take 10 (cycle [1, 2, 3]) -- [1,2,3,1,2,3,1,2,3,1]
+repeat5 = take 10 (repeat 5)            -- [1,2,3,1,2,3,1,2,3,1]
